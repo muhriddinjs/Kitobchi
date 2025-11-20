@@ -1,36 +1,36 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
 
 header {
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
-    position: relative;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  position: relative;
 }
 
 .title-font {
-    font-family: 'Noto Serif JP';
+  font-family: "Noto Serif JP";
 }
 
 .hover-action:hover {
-    border-bottom: 2px solid #6366F1;
+  border-bottom: 2px solid #6366f1;
 }
 
 nav a.active {
-    border-bottom: 2px solid #6366F1;
+  border-bottom: 2px solid #6366f1;
 }
 
 .btn-hover:hover {
-    background-color: #4f51ff;
+  background-color: #4f51ff;
 }
 
 .btn {
-    background-color: #6366F1;
-    color: #fff;
-    padding: 4px 14px;
-    border-radius: 7px;
+  background-color: #6366f1;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 7px;
 }
 
 .title {
-  color: #1E1B4B;  
+  color: #1e1b4b;
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
