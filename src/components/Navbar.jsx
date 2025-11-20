@@ -48,7 +48,6 @@ function Navbar() {
         {/* RIGHT ICONS */}
         <div className="hidden md:flex items-center gap-4">
           {/* Categories Dropdown */}
-<<<<<<< Updated upstream
           <div ref={menuRef} className="relative">
             <span
               className="flex items-center gap-2 font-medium text-gray-700 hover:text-indigo-600 transition px-3 py-2 border border-transparent hover:border-indigo-300 rounded-lg bg-white/60 backdrop-blur-sm shadow-sm hover:shadow cursor-pointer"
@@ -79,30 +78,12 @@ function Navbar() {
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 -translate-y-2 pointer-events-none"
               }`}
-=======
-          <div className="group relative cursor-pointer">
-            <div className="font-medium text-gray-700 hover:text-indigo-600 transition">
-              Kategoriyalar
-            </div>
-
-            {/* Bu dropdown endi parent group ichida (hover yo‘qolmaydi) */}
-            <div
-              className="absolute left-1/2 -translate-x-1/2 hidden group-hover:block 
-               bg-white shadow-xl rounded-2xl mt-3 w-48 py-3 border border-gray-100
-               transition-all duration-200 opacity-0 group-hover:opacity-100 
-               translate-y-2 group-hover:translate-y-0"
->>>>>>> Stashed changes
             >
               {categories.map((cat) => (
                 <Link
                   key={cat.name}
                   to={cat.path}
-<<<<<<< Updated upstream
                   className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition rounded-sm"
-=======
-                  className="block px-5 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 
-                   rounded-xl transition-colors duration-150"
->>>>>>> Stashed changes
                 >
                   {cat.name}
                 </Link>
