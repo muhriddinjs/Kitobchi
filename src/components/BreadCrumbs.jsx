@@ -1,8 +1,5 @@
-
 function BreadCrumbs() {
-    return (
-        <div>BreadCrumbs</div>
-    )
+  return <div>BreadCrumbs</div>;
 }
 
-export default BreadCrumbs
+export default BreadCrumbs;
