@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import BooksData from "../api/books.json";
 
@@ -6,7 +6,13 @@ const BookDetails = () => {
   const { id } = useParams();
   const book = BooksData.find((b) => b.id === Number(id));
 
-  if (!book) return <h2 className="text-center mt-10 text-gray-500">Kitob topilmadi</h2>;
+  // Tanlangan rasm uchun state
+  const [selectedImage, setSelectedImage] = useState(
+    book?.images?.[0] || ""
+  );
+
+  if (!book)
+    return <h2 className="text-center mt-10 text-gray-500">Kitob topilmadi</h2>;
 
   return (
     <div className="max-w-6xl mx-auto p-6">
@@ -14,10 +20,11 @@ const BookDetails = () => {
         {/* Rasmlar */}
         <div>
           <img
-            src={book.image}
+            src={selectedImage}
             alt={book.title}
             className="rounded-xl shadow-md w-full h-[400px] object-cover mb-4"
           />
+
           {book.images && book.images.length > 0 && (
             <div className="flex gap-2 overflow-x-auto">
               {book.images.map((img, idx) => (
@@ -25,7 +32,10 @@ const BookDetails = () => {
                   key={idx}
                   src={img}
                   alt={`preview-${idx}`}
-                  className="w-24 h-32 object-cover rounded-lg cursor-pointer border hover:ring-2 hover:ring-indigo-500 transition"
+                  onClick={() => setSelectedImage(img)}
+                  className={`w-24 h-32 object-cover rounded-lg cursor-pointer border transition
+                    ${selectedImage === img ? "ring-2 ring-indigo-500" : ""}
+                  `}
                 />
               ))}
             </div>
@@ -86,7 +96,9 @@ const BookDetails = () => {
       {/* Tavsif */}
       <div className="mt-10">
         <h2 className="text-2xl font-bold mb-3">Tavsif</h2>
-        <p className="text-gray-700 leading-relaxed">{book.description || "Tavsif mavjud emas"}</p>
+        <p className="text-gray-700 leading-relaxed">
+          {book.description || "Tavsif mavjud emas"}
+        </p>
       </div>
 
       {/* Bitim joyi */}
