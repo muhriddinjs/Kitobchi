@@ -8,12 +8,15 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const menuRef = useRef(null);
   const categories = [
-    { name: "Badiiy", path: "/category/fiction" },
-    { name: "Dasturlash", path: "/category/programming" },
-    { name: "Psixologiya", path: "/category/psychology" },
-    { name: "Biznes", path: "/category/business" },
-    { name: "Bolalar", path: "/category/kids" },
+    { name: "Adabiy-badiiy", path: "fiction-literature" },
+    { name: "Tarixiy", path: "history" },
+    { name: "Diniy", path: "religion" },
+    { name: "Biznes va tadbirkorlik", path: "business-entrepreneurship" },
+    { name: "Psixologiya", path: "psychology" },
+    { name: "Bolalar adabiyoti", path: "childrens-literature" },
+    { name: "Ilm-fan", path: "science" },
   ];
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -82,7 +85,7 @@ function Navbar() {
               {categories.map((cat) => (
                 <Link
                   key={cat.name}
-                  to={cat.path}
+                  to={`/category/${cat.path}`}
                   className="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition rounded-sm"
                 >
                   {cat.name}

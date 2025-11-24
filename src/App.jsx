@@ -20,6 +20,7 @@ import Error from "./pages/Error";
 import Announcement from "./pages/Announcement";
 import Profile from "./pages/Profile";
 import { Book } from "lucide-react";
+import CategoryPage from "./components/CategoryPage";
 
 const App = () => {
   const routes = createBrowserRouter([
@@ -52,6 +53,10 @@ const App = () => {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/category/:categoryPath", // dynamic category page
+          element: <CategoryPage />,
         },
       ],
     },

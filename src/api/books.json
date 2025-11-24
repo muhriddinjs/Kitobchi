@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Sarguzashtlar dunyosi",
     "author": "Ali Valiyev",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 35000,
     "description": "Bu kitob yosh o‘quvchilar uchun mo‘ljallangan sarguzashtlar to‘plami bo‘lib, unda qahramonlarning turli sarguzashtlari va hayotiy sinovlari tasvirlangan. Har bir sarguzashtda yangi saboqlar bor va o‘quvchi o‘zini voqealar markazida his qiladi.",
     "images": [
@@ -27,7 +27,7 @@
     "id": 2,
     "title": "O‘zbekiston tarixi",
     "author": "Mansur Karimov",
-    "category": "Tarixiy",
+    "category": "history",
     "price": 42000,
     "description": "Kitobda O‘zbekiston va Markaziy Osiyo tarixidan qiziqarli faktlar, qadimiy shaharlar va hukmdorlarning hayoti haqida keng ma’lumotlar berilgan. Tarixiy voqealar, arxeologik topilmalar va madaniy meros shtatlari batafsil tahlil etiladi.",
     "images": [
@@ -51,7 +51,7 @@
     "id": 3,
     "title": "Islomiy qo‘llanma",
     "author": "Fatima Yusufova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 28000,
     "description": "Bu kitob namoz, puxta ibodat va diniy amallarni bajarishda yordam beradigan maslahatlardan iborat. Unda ham boshlovchilar, ham tajribali o‘quvchilar uchun islomiy axloq va kundalik ruhiy o‘sish uchun yo‘riqnoma bor.",
     "images": [
@@ -76,7 +76,7 @@
     "id": 4,
     "title": "Biznes asoslari",
     "author": "Jasur Raximov",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 50000,
     "description": "Startaplar, kichik biznes va korxonani tashkil qilishga oid amaliy qadamlar. Kitobda biznes reja tuzish, bozor tahlili va moliyaviy boshqaruv bo‘yicha foydali maslahatlar berilgan.",
     "images": [
@@ -100,7 +100,7 @@
     "id": 5,
     "title": "Psixologiya asoslari",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 39000,
     "description": "Ruhiy salomatlik, stressdan qutulish va shaxsiy o‘sish yo‘llari haqida chuqur tahlillar. Kitobda o‘z-o‘zini anglash va muloqot qilish bo‘yicha amaliy tavsiyalar mavjud.",
     "images": [
@@ -124,7 +124,7 @@
     "id": 6,
     "title": "Bolalar ertaklari",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 22000,
     "description": "Ertaklar dunyosi — sehrli qahramonlar, sehrli o‘rmonlar va mehribon ota-onalar haqida hikoyalar. Yosh bolalar va ularning ota-onalari uchun yoqimli va tushunarli bola ertaklari to‘plami.",
     "images": [
@@ -149,7 +149,7 @@
     "id": 7,
     "title": "IT asoslari",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 45000,
     "description": "Kirish darajadagi dasturlash tushunchalari, algoritmlar va veb‑dasturlashga oid foydali misollar. Boshlovchilar uchun ideal qo‘llanma.",
     "images": [
@@ -173,7 +173,7 @@
     "id": 8,
     "title": "She’riyat to‘plami",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 30000,
     "description": "Romantik va hayotiy she’rlar yig‘indisi. Har bir she’r o‘quvchini ruhiy sayohatga chorlaydi va ichki his-tuyg‘ularni ochib beradi.",
     "images": [
@@ -197,7 +197,7 @@
     "id": 9,
     "title": "O‘zbek tarixi keng ko‘lamda",
     "author": "Jaloliddin Rahmonov",
-    "category": "Tarixiy",
+    "category": "history",
     "price": 48000,
     "description": "Bu kitobda O‘zbekistonda yuz bergan muhim tarixiy voqealar, qadimiy shaharlar, hukmdorlar va ularning siyosiy faoliyati Batafsil bayon etiladi. O‘quvchi qadar zamonlararo sayohat qiladi va tarixiy manbalar asosida yoritilgan tafsilotlarni bilib oladi.",
     "images": [
@@ -219,7 +219,7 @@
     "id": 10,
     "title": "Tadbirkorlik yo‘llari",
     "author": "Anvar Sobirov",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 52000,
     "description": "Kichik biznesni boshlash, uni barqaror rivojlantirish va raqobatda ustunlikka erishish uchun zarur strategiyalar va misollarni o‘z ichiga olgan amaliy qo‘llanma.",
     "images": [
@@ -243,7 +243,7 @@
     "id": 11,
     "title": "Falsafa va hayot",
     "author": "Sodiq Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 36000,
     "description": "Bu kitob falsafiy tafakkur, hayotiy maqsadlar va shaxsiy o‘sish haqida chuqur mulohazalar jamlangan. Har bir bobda falsafaning hayotdagi o‘rni va ahamiyati yoritiladi.",
     "images": [
@@ -267,7 +267,7 @@
     "id": 12,
     "title": "Jahon adabiyoti tanlovi",
     "author": "Munavvar Saidov",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 40000,
     "description": "Dunyoning turli mamlakatlaridan olingan mashhur hikoyalar, esse va kichik asarlar to‘plami. Har bir asar o‘quvchini o‘ziga xos dunyoga olib kiradi.",
     "images": [
@@ -288,7 +288,7 @@
     "id": 13,
     "title": "Matematika soddaligi",
     "author": "Kamoliddin Rasulov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 38000,
     "description": "O‘rta maktab o‘quvchilari uchun matematikani tushunarli va sodda tilda tushuntiradigan qo‘llanma. Misollar va mashqlar bilan boyitilgan.",
     "images": [
@@ -309,7 +309,7 @@
     "id": 14,
     "title": "Tarbiyaviy psixologiya",
     "author": "Shahnoza Karimova",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 31000,
     "description": "Bolalar va o‘smirlar tarbiyasi, ularning ruhiy o‘sishi va o‘zini anglash masalalariga bag‘ishlangan kitob. Tavsiyalar va metodikalar ko‘p bosqichli shaklda taqdim etilgan.",
     "images": [
@@ -330,7 +330,7 @@
     "id": 15,
     "title": "Bolalar uchun sehrli ertaklar",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 24000,
     "description": "Sehrli qahramonlar, sehrli mavjudotlar va juda go‘zal olamlar haqida ertaklar to‘plami. Har bir hikoya bolalar tabassumi va xayol dunyosini boyitadi.",
     "images": [
@@ -351,7 +351,7 @@
     "id": 16,
     "title": "Fizika qo‘llanmasi",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 47000,
     "description": "O‘rta maktab o‘quvchilari uchun fizikani tushunishga yordam beradigan qo‘llanma. Kuch, harakat, energiya va boshqa fizik tushunchalar sodda tilda tushuntirilgan.",
     "images": [
@@ -372,7 +372,7 @@
     "id": 17,
     "title": "Hayotiy hikoyalar",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 33000,
     "description": "Inson va hayot haqida chuqur mulohazalar, mehr, dard va umid bilan bog‘liq hikoyalar to‘plami. Har hikoya o‘quvchini jonli obrazlar va qimmatli saboqlar bilan tanishtiradi.",
     "images": [
@@ -393,7 +393,7 @@
     "id": 18,
     "title": "O‘zbek adabiyoti klassikasi",
     "author": "Jaloliddin Rahmonov",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 42000,
     "description": "O‘zbek yozuvchilari tomonidan yaratilgan klassik asarlar to‘plami. Romanlar, hikoyalar va dramalar orqali o‘quvchi o‘z milliy merosi bilan tanishadi.",
     "images": [
@@ -414,7 +414,7 @@
     "id": 19,
     "title": "Marketing strategiyalari",
     "author": "Anvar Sobirov",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 51000,
     "description": "Marketing va savdo strategiyalari, mijozni tahlil qilish, brend yaratish va raqobatda ustunlikka erishish bo‘yicha amaliy ko‘rsatmalar va misollar.",
     "images": [
@@ -435,7 +435,7 @@
     "id": 20,
     "title": "Jahon falsafasi to‘plami",
     "author": "Sodiq Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 39000,
     "description": "Dunyoning eng buyuk faylasuflarining hayotiga bag‘ishlangan va ularning falsafiy g‘oyalari, tafakkuri va inson haqida mulohazalaridan iborat to‘plam.",
     "images": [
@@ -456,7 +456,7 @@
     "id": 21,
     "title": "Tarixiy afsonalar",
     "author": "Azizbek Ibragimov",
-    "category": "Tarixiy",
+    "category": "history",
     "price": 44000,
     "description": "Ushbu kitobda qadimiy davrlar, afsonaviy qirol va malika hikoyalari, qadimgi imperiyalar va ularning sirli voqealari haqida bayon etilgan.",
     "images": [
@@ -478,7 +478,7 @@
     "id": 22,
     "title": "Dunyodagi dinlar tarixi",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 47000,
     "description": "Turli dinlar, ularning kelib chiqishi, asosiy ta’limotlari va tarixiy rivojlanishi haqida ilmiy-asosli tahlillar.",
     "images": [
@@ -499,7 +499,7 @@
     "id": 23,
     "title": "Motivatsiya va muvaffaqiyat",
     "author": "Kamola Abdullayeva",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 45000,
     "description": "Bu kitob o‘zini anglash, ichki motivatsiyani oshirish va hayotda yuksalishga yordam beradigan motivatsion strategiyalarni taklif qiladi.",
     "images": [
@@ -520,7 +520,7 @@
     "id": 24,
     "title": "Bolalar uchun olam sirlarlari",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 26000,
     "description": "Sehrli olamlar, sirli ruhlar, sehrli daraxtlar va sehrli hayvonlar haqida bolalar uchun maxsus yozilgan hikoyalar.",
     "images": [
@@ -542,7 +542,7 @@
     "id": 25,
     "title": "Texnologiya olami",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 48000,
     "description": "Zamonaviy texnologiyalar, sun’iy intellekt, robototexnika va raqamli transformatsiya haqida tushunarli tushuntirishlar bilan yozilgan ilmiy qo‘llanma.",
     "images": [
@@ -563,7 +563,7 @@
     "id": 26,
     "title": "Muhabbat va hayot",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 37000,
     "description": "Bu to‘plam sevgi, mehr, hayotning qiyinchiliklari va quvonchli lahzalari haqida she’rlar va qisqa hikoyalardan iborat. Har bir asar yurakni ohang bilan o‘ziga jalb qiladi.",
     "images": [
@@ -584,7 +584,7 @@
     "id": 27,
     "title": "Tarixiy romanlar siri",
     "author": "Azizbek Ibragimov",
-    "category": "Tarixiy",
+    "category": "history",
     "price": 46000,
     "description": "Ushbu kitobda tarixiy romanlar orqali qadimiy hukmdorlar, urushlar va mehmonxonalar tafsilotlari hikoya qilinadi. Har bir roman tarix va badiiylikni uyg‘unlashtiradi.",
     "images": [
@@ -606,7 +606,7 @@
     "id": 28,
     "title": "Tafakkur va bilim",
     "author": "Madina Rasulova",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 42000,
     "description": "Falsafa, ilm, mantiq va bilishga bo‘lgan istakni rivojlantiruvchi ta’limiy asarlar jamlanmasi. O‘quvchi o‘z fikrlash qobiliyatini mustahkamlashi mumkin.",
     "images": [
@@ -627,7 +627,7 @@
     "id": 29,
     "title": "Dunyoni o‘zgartiruvchi g‘oyalar",
     "author": "Shahnoza Karimova",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 55000,
     "description": "Katta maqsad sari ilhomlantiruvchi g‘oyalar, innovatsion loyihalar va kelajakdagi biznes modeli haqida fikr yuritadigan strategik qo‘llanma.",
     "images": [
@@ -648,7 +648,7 @@
     "id": 30,
     "title": "Psixologiya va liderlik",
     "author": "Kamola Abdullayeva",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 47000,
     "description": "Liderlik, jamoa boshqaruvi va shaxsiy salohiyatni oshirish uchun psixologik tushunchalar va amaliy mashq taqdimoti.",
     "images": [
@@ -669,7 +669,7 @@
     "id": 31,
     "title": "Bolalar uchun ilmiy olam",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 28000,
     "description": "Bolalar uchun ilmiy tushunchalar (kosmos, atom, hayvonlar) soddalashtirilgan holda bayon etilgan. Ular uchun qiziqarli va xavfsiz ilmiy sayohat.",
     "images": [
@@ -690,7 +690,7 @@
     "id": 32,
     "title": "Diniy qarashlar va amaliyot",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 31000,
     "description": "Kundalik hayotda diniy qarashlarni qanday amalda qo‘llash mumkinligi haqida ilhomlantiruvchi va chuqur mulohazalar. Ijodiy namuna va ibodat tavsiyalari bilan birga.",
     "images": [
@@ -711,7 +711,7 @@
     "id": 33,
     "title": "Ijod va ilhom",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 38000,
     "description": "Ijodkorlik va ilhom haqida she’rlar, esse va o‘ylarga to‘la qo‘llanma. O‘quvchini ichki imkoniyatlarini kashf qilishga undaydi.",
     "images": [
@@ -732,7 +732,7 @@
     "id": 34,
     "title": "Tarixiy tajriba va darslar",
     "author": "Azizbek Ibragimov",
-    "category": "Tarixiy",
+    "category": "history",
     "price": 45000,
     "description": "Qadimiy jamiyatlar, urushlar, imperiyalar va insoniyat tarixidagi muhim voqealardan olingan saboqlar. O‘quvchi uchun tarixiy tajriba va ma’naviy darslar hamda zamonalararo muvozanat ko‘rsatkichlari.",
     "images": [
@@ -754,7 +754,7 @@
     "id": 35,
     "title": "Liderlik psixologiyasi",
     "author": "Kamola Abdullayeva",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 50000,
     "description": "Lider bo‘lish, jamoani boshqarish va motivatsiyani ushlab turish bo‘yicha psixologik strategiyalar. Har bir bobda amaliy masalalar va misollar mavjud.",
     "images": [
@@ -775,7 +775,7 @@
     "id": 36,
     "title": "Bolalar uchun kosmik sayohat",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 30000,
     "description": "Yosh o‘quvchilar uchun sehrli kosmik sayohatlar, yulduzlar, sayyoralar va ularning sirli olamlari haqida sehrli hikoyalar.",
     "images": [
@@ -797,7 +797,7 @@
     "id": 37,
     "title": "Ilm-fan va taraqqiyot",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 52000,
     "description": "Zamonaviy ilmiy kashfiyotlar, texnologik yangiliklar va insoniyatning kelajagi haqida yozilgan ilmiy-populyar kitob.",
     "images": [
@@ -818,7 +818,7 @@
     "id": 38,
     "title": "Ma’naviy o‘sish",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 34000,
     "description": "Inson ruhiyati, ma’naviyati va imoni haqida chuqur mulohazalar yig‘indisi. Har bobda o‘zini anglash va ma’naviy energiyani uyg‘otish usullari mavjud.",
     "images": [
@@ -839,7 +839,7 @@
     "id": 39,
     "title": "Ijodkor yurak",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 39000,
     "description": "She’rlar, hikoyalar va esse orqali o‘z ijodini topmoqchi bo‘lganlar uchun ilhom manbai. Har bir asar o‘quvchiga ijodiy ruh bag‘ishlaydi.",
     "images": [
@@ -860,7 +860,7 @@
     "id": 40,
     "title": "G‘oyalarning qudrati",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 53000,
     "description": "Yangi g‘oyalar yaratish, ijodiy yechim topish va ularni real biznesga aylantirish bo‘yicha strategik qo‘llanma. Dastlabki rejalashtirish va ijro etish bosqichlari batafsil ko‘rib chiqilgan.",
     "images": [
@@ -881,7 +881,7 @@
     "id": 41,
     "title": "Ruhiy salomatlik yo‘li",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 44000,
     "description": "Stressni kamaytirish, xotirjamlik va ichki muvozanatni saqlashda yordam beradigan ruhiy salomatlik strategiyalari va amaliy mashqlar.",
     "images": [
@@ -902,7 +902,7 @@
     "id": 42,
     "title": "Bolalar uchun sehrli hayvonlar",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 29000,
     "description": "Sehrli mavjudotlar, afsonaviy hayvonlar va sehrli olamlar haqida bolalar uchun quvnoq va ilhomlantiruvchi ertaklar.",
     "images": [
@@ -924,7 +924,7 @@
     "id": 43,
     "title": "Zamonaviy koinot tushunchalari",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 56000,
     "description": "Koinot, qora tuynuklar, galaktikalar va kvant fizikasi haqida zamonaviy ilmiy nazariyalar va tushunchalar sodda tilda tushuntirilgan kitob.",
     "images": [
@@ -945,7 +945,7 @@
     "id": 44,
     "title": "Iymon va amallar",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 32000,
     "description": "Iymon, duo va amaliylik bo‘yicha to‘liq yo‘riqnoma. Har bobda amaldagi muammolarni bartaraf qilish bo‘yicha diniy maslahatlar berilgan.",
     "images": [
@@ -966,7 +966,7 @@
     "id": 45,
     "title": "Sevgi va sehr",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 41000,
     "description": "Sehrli sevgi hikoyalari, romantik tajribalar va ichki qalbning shovqinli his-tuyg‘ulari haqida badiiy asarlar. Har hikoya yurakka tegadi.",
     "images": [
@@ -987,7 +987,7 @@
     "id": 46,
     "title": "Biznes va istiqbol",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 54000,
     "description": "Kelajakdagi biznes g‘oyalari, startap modeli va raqamli iqtisodiyotda raqobatbardosh bo‘lish uchun strategiyalar. Marketing, moliyaviy reja, va boshqaruv yo‘riqnomasi mavjud.",
     "images": [
@@ -1008,7 +1008,7 @@
     "id": 47,
     "title": "Ichki kuch va barqarorlik",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 46000,
     "description": "O‘z-o‘zini qo‘llab-quvvatlash, ichki xotirjamlik va ruhiy mustahkamlikni oshirish uchun amaliy maslahatlar va meditatsiya mashqlari bilan boyitilgan kitob.",
     "images": [
@@ -1029,7 +1029,7 @@
     "id": 48,
     "title": "Bolalar uchun sehrli sayohatlar",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 31000,
     "description": "Sehrli sayohatlar, sehrli o‘rmonlar va sehrli mavjudotlar bilan to‘la ertaklar. Har hikoya bolalarni vast va sehrli olamlarga olib kiradi.",
     "images": [
@@ -1051,7 +1051,7 @@
     "id": 49,
     "title": "Ilm-fan sirli olami",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 58000,
     "description": "Kosmik misteriyalar, nazariy fizika va kvant mexanikasi haqida ilmiy-populyar tushuntirishlar. O‘quvchini ilmiy bilimlar va hayrat bilan to‘ldiradi.",
     "images": [
@@ -1072,7 +1072,7 @@
     "id": 50,
     "title": "Ma’naviy dunyo",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 33000,
     "description": "Iymon, amallar va ma’naviy o‘sish haqida dono maslahatlar va tafakkurlar jamlangan. Har bobda ruhiy poklanish va ichki yo‘lni topishga bag‘ishlangan.",
     "images": [
@@ -1093,7 +1093,7 @@
     "id": 51,
     "title": "Sevgi va dard she’rlari",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 40000,
     "description": "Yurakdagi his-tuyg‘ular, sevgi, ayriliq va umid haqida chuqur she’rlar va lyrik asarlar. O‘quvchini ruhiy sayohatga olib boradi.",
     "images": [
@@ -1114,7 +1114,7 @@
     "id": 52,
     "title": "Yangi dunyo g‘oyalari",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 56000,
     "description": "G‘oyalar, innovatsiyalar va transformatsiya haqida strategik fikrlash va amaliy yechimlar jamlangan kitob. Kelajakni qurish uchun ilhom manbai.",
     "images": [
@@ -1135,7 +1135,7 @@
     "id": 53,
     "title": "Ichki kuch va qat’iyat",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 48000,
     "description": "O‘ziga bo‘lgan ishonch, qat’iyat va ichki barqarorlikni oshirish uchun psixologik strategiyalar va meditatsiyalar. Har bir mashq o‘quvchiga o‘z kuchini topishga yordam beradi.",
     "images": [
@@ -1156,7 +1156,7 @@
     "id": 54,
     "title": "Sehrli ertaklar sayohati",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 33000,
     "description": "Sehrli jonzotlar, sehrli olamlar va sehrli voqealar bilan to‘la ertaklar to‘plami. Bolalar uchun o‘qishga juda mos va ilhomlantiruvchi.",
     "images": [
@@ -1178,7 +1178,7 @@
     "id": 55,
     "title": "Ilm-fan va ma’naviyat",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 60000,
     "description": "Ilm-fan va ma’naviyat o‘rtasidagi aloqalar, olimlarning hayoti va iymon bilan ilmiy o‘sish haqida mulohazali kitob.",
     "images": [
@@ -1199,7 +1199,7 @@
     "id": 56,
     "title": "Iymon va sabr",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 35000,
     "description": "Iymon, sabr va duo orqali hayot yo‘lini yoritish haqidagi diniy va ma’naviy asarlar. Har bobda sabrning qudrati va iymon kuchi tasvirlangan.",
     "images": [
@@ -1220,7 +1220,7 @@
     "id": 57,
     "title": "Hayotni sevish san’ati",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 42000,
     "description": "Sevgi, mehr, hayot va insoniy bog‘liqlik haqida chuqur mulohazalar va badiiy asarlar. O‘quvchi qalbining nozik tomonlari ochiladi.",
     "images": [
@@ -1241,7 +1241,7 @@
     "id": 58,
     "title": "G‘oya va ijodkorlik",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 58000,
     "description": "Ijodkorlik, biznes g‘oyalari va ulardan kelib chiqqan startaplar haqida strategik fikrlash va amaliy tavsiyalar to‘plami.",
     "images": [
@@ -1262,7 +1262,7 @@
     "id": 59,
     "title": "Psixologik bo‘ysunish",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 47000,
     "description": "Shaxsiy chegaralar, o‘zini anglash va boshqalar bilan sog‘lom munosabat o‘rnatish uchun foydali psixologik yo‘riqnoma.",
     "images": [
@@ -1283,7 +1283,7 @@
     "id": 60,
     "title": "Erta ertaklar to‘plami",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 25000,
     "description": "Boshlang‘ich yoshdagi bolalar uchun eng sara ertaklar to‘plami. Sehrli voqealar, mehribon qahramonlar va o‘quvchini xayolga chorlovchi hikoyalar jamlangan.",
     "images": [
@@ -1304,7 +1304,7 @@
     "id": 61,
     "title": "Ilm‑fan va kashfiyotlar",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 61000,
     "description": "Katta ilmiy kashfiyotlar, Nobel mukofoti olgan olimlar va ularning ishlari haqida faktlar va tushunchalar jamlangan kitob.",
     "images": [
@@ -1325,7 +1325,7 @@
     "id": 62,
     "title": "Ma’naviy ilhom",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 36000,
     "description": "Iymon, rahmat va ma’naviy o‘sish yo‘lida ilhom beruvchi diniy hikoyalar va mulohazalar to‘plami.",
     "images": [
@@ -1346,7 +1346,7 @@
     "id": 63,
     "title": "Yurakdan yozilganlar",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 43000,
     "description": "Romantik sevgi, ichki dardlar va umid bilan bog‘liq she’rlar va esse. Har bir sahifada yurak ohangi aks etadi.",
     "images": [
@@ -1367,7 +1367,7 @@
     "id": 64,
     "title": "Biznes falsafasi",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 59000,
     "description": "Biznes va hayot, tashkilotchilik va maqsadga erishish haqida falsafiy yondashuv. Strategik fikrlash va mantiqiy yechimlar bilan to‘la qo‘llanma.",
     "images": [
@@ -1388,7 +1388,7 @@
     "id": 65,
     "title": "Ichki erkinlik",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 49000,
     "description": "Ichki erkinlik, o‘zligiga sodiqlik va shaxsiy chegaralarni belgilash haqida amaliy va psixologik maslahatlar berilgan kitob.",
     "images": [
@@ -1409,7 +1409,7 @@
     "id": 66,
     "title": "Sehrli ertaklar olami",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 34000,
     "description": "Sehrli qahramonlar, sehrli shaharlar va sehrli olamlar haqidagi bolalar ertaklari. Har hikoya hayol va xayolotni kengaytiradi.",
     "images": [
@@ -1431,7 +1431,7 @@
     "id": 67,
     "title": "Koinot va kashfiyotlar",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 63000,
     "description": "Koinot, yulduzlar, galaktikalar va kosmik kashfiyotlar haqida zamonaviy ilmiy kontekstda yozilgan kitob. O‘quvchini ilmiy izlanish va hayrat bilan to‘ldiradi.",
     "images": [
@@ -1452,7 +1452,7 @@
     "id": 68,
     "title": "Imonni mustahkamlash yo‘li",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 37000,
     "description": "Imon, duo va ruhiy barqarorlikni saqlash bo‘yicha nazariy va amaliy yo‘riqnoma. Har bobda ruhiy kuch va qadriyat borasida fikr yuritiladi.",
     "images": [
@@ -1473,7 +1473,7 @@
     "id": 69,
     "title": "Sevgi va umid taronalari",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 44000,
     "description": "Sevgi, umid va hayot haqida she’rlar va qisqa hikoyalar. Har bir asar yurakka iliqlik va ruhiy tasalli beradi.",
     "images": [
@@ -1494,7 +1494,7 @@
     "id": 70,
     "title": "Investorlik sirlar",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 62000,
     "description": "Kapitalni investitsiya qilish, portfel yaratish va riskni boshqarish bo‘yicha investorlar uchun amaliy va strategik tavsiyalar.",
     "images": [
@@ -1515,7 +1515,7 @@
     "id": 71,
     "title": "Ichki tinchlik",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 50000,
     "description": "Stres va tashvishlardan xalos bo‘lish, ichki tinchlikni saqlash hamda ongni tozalash uchun psixologik amaliy mashqlar va strategiyalar.",
     "images": [
@@ -1536,7 +1536,7 @@
     "id": 72,
     "title": "Bolalar uchun sehrli sehrgar",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 35000,
     "description": "Sehrli sehrgarlar, sehrli shaharlar va sehrli sehrlar haqida bolalar uchun eng quvnoq va ilhomlantiruvchi ertaklar.",
     "images": [
@@ -1558,7 +1558,7 @@
     "id": 73,
     "title": "Zamonaviy fizika tushunchalari",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 64000,
     "description": "Relativistik mexanika, kvant nazariyasi va kosmologiya haqida zamonaviy tushuntirishlar. Har bobda ilmiy izlanishlar va nazariyalarning hayqiqati tushuntiriladi.",
     "images": [
@@ -1579,7 +1579,7 @@
     "id": 74,
     "title": "Iymon va hayot hikoyalari",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 38000,
     "description": "Imonli insonlarning hayoti, sabr, duo va ma’naviy o‘sish hikoyalari. Har biri o‘quvchiga ruhiy oziqa beradi.",
     "images": [
@@ -1600,7 +1600,7 @@
     "id": 75,
     "title": "Yurakdagi mushohada",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 45000,
     "description": "Muhabbat, do‘stlik, hayot va insoniy his-tuyg‘ular haqida chuqur mushohadalar va lirikalik asarlar. O‘quvchiga o‘z ruhini eshitishga imkon beradi.",
     "images": [
@@ -1621,7 +1621,7 @@
     "id": 76,
     "title": "Strategik g‘oyalar",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 65000,
     "description": "Katta maqsadlarga erishish uchun strategik fikrlash va ijodiy g‘oyalarni birlashtirish bo‘yicha amaliy qo‘llanma. Innovatsion biznes va kashfiyotlar uchun mos.",
     "images": [
@@ -1642,7 +1642,7 @@
     "id": 77,
     "title": "Psixologik erkinlik",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 51000,
     "description": "O‘z his-tuyg‘ularini tushunish, stressni nazorat qilish va ichki erkinlikka erishish uchun psixologik strategiyalar jamlangan kitob.",
     "images": [
@@ -1663,7 +1663,7 @@
     "id": 78,
     "title": "Bolalar uchun sehrli sehrgarlar sayohati",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 36000,
     "description": "Sehrli sehrgarlar, sehrli o‘rmonlar va sehrli mavjudotlar bilan to‘la bolalar ertaklari. Har bir sahifa sehrli lahzalarni va ishonchni beradi.",
     "images": [
@@ -1685,7 +1685,7 @@
     "id": 79,
     "title": "Kainot sirli sarguzashtlari",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 67000,
     "description": "Koinot, yulduzlar va galaktikalar orasidagi kashfiyotlar va sirli voqealar haqida ilmiy-populyar hikoyalar va nazariyalar jamlangan.",
     "images": [
@@ -1706,7 +1706,7 @@
     "id": 80,
     "title": "Ma’naviy ildizlar",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 39000,
     "description": "Imon va ma’naviyatga bag‘ishlangan chuqur mulohazalar, diniy hikoyalar va sabrga oid maslahatlar. O‘quvchiga ruhiy o‘sish bosqichlarini ochib beradi.",
     "images": [
@@ -1727,7 +1727,7 @@
     "id": 81,
     "title": "Yurakda aks sado",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 46000,
     "description": "She’rlar va hikoyalar orqali yurakda aks etuvchi hissiyotlar — sevgi, dard va umid haqida samimiy ifodalar jamlangan to‘plam.",
     "images": [
@@ -1748,7 +1748,7 @@
     "id": 82,
     "title": "Biznes va vatanparvarlik",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 68000,
     "description": "Mahalliy biznes va milliy qadriyatlarni uyg‘unlashtirgan holda yurtga foyda keltirish strategiyalari haqida amaliy fikrlar va tajribalar.",
     "images": [
@@ -1769,7 +1769,7 @@
     "id": 83,
     "title": "Ichki o‘zlik",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 52000,
     "description": "O‘zlikni anglash, ichki potentsialni kashf etish va hayot maqsadini aniqlash bo‘yicha psixologik yo‘riqnoma va mashqlar.",
     "images": [
@@ -1790,7 +1790,7 @@
     "id": 84,
     "title": "Bolalar va sehrli orzular",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 37000,
     "description": "Bolalar uchun sehrli orzular olami, sehrli mavjudotlar va mehribon qahramonlar haqida to‘liq sehrli ertaklar to‘plami.",
     "images": [
@@ -1811,7 +1811,7 @@
     "id": 85,
     "title": "Kvant olami",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 70000,
     "description": "Kvant mexanikasi, superpozitsiya, entanglement va boshqa murakkab ilmiy tushunchalar oddiy tilda tushuntirilgan va o‘quvchining ilmiy qiziqishini uyg‘otadi.",
     "images": [
@@ -1832,7 +1832,7 @@
     "id": 86,
     "title": "Iymon, umid va sabr",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 40000,
     "description": "Bu kitobda iymon, sabr va umid haqida diniy hikoyalar, nasihatlar va amaliy hayotda foydalaniladigan yo‘riqnoma bor. O‘quvchi ruhiy kuch va barqarorlik topadi.",
     "images": [
@@ -1853,7 +1853,7 @@
     "id": 87,
     "title": "Lirikalik yurak",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 47000,
     "description": "Sevgi, hayot va dard haqida lirikalik she’rlar va qisqa hikoyalar. O‘quvchiga ichki tinchlik va mushohada beradi.",
     "images": [
@@ -1874,7 +1874,7 @@
     "id": 88,
     "title": "G‘oyaning qudrati",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 69000,
     "description": "Ijodiy g‘oyalarni foydali biznesga aylantirish uchun strategiyalar va motivatsion yondashuvlar. Har bobda real misollar va maslahatlar mavjud.",
     "images": [
@@ -1895,7 +1895,7 @@
     "id": 89,
     "title": "Ichki erkinlik va maqsad",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 53000,
     "description": "Shaxsiy maqsadga erishish, ichki erkinlikni oshirish va hayot ma’nosini topish bo‘yicha psixologik yo‘riqnomalar va mashqlar.",
     "images": [
@@ -1916,7 +1916,7 @@
     "id": 90,
     "title": "Sehrli dunyolar hammomida",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 38000,
     "description": "Sehrli mamlakatlar, sehrli qudratlar va sehrli do‘stlar haqida bolalar uchun mo‘ljallangan rang-barang va sehrli hikoyalar.",
     "images": [
@@ -1938,7 +1938,7 @@
     "id": 91,
     "title": "Kosmik nazariyalar",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 72000,
     "description": "Koinot, relativistik harakat, qora tuynuklar va galaktikalar nazariyasi haqida chuqur ilmiy-populyar tushunchalar va tahlillar.",
     "images": [
@@ -1959,7 +1959,7 @@
     "id": 92,
     "title": "Iymon va mehr",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 42000,
     "description": "Sevgi, sabr va imon haqida diniy hikoyalar va nasihatlar jamlanmasi. Har bobda ruhiy farovonlik va ma’naviy o‘sish haqida mulohazalar mavjud.",
     "images": [
@@ -1980,7 +1980,7 @@
     "id": 93,
     "title": "She’riyat va mushohada",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 48000,
     "description": "Ichki dunyo, mushohada va ruhiy izlanish haqida lirikalik she’rlar va esse. Har bir asar o‘quvchini o‘z fikriga chorlaydi.",
     "images": [
@@ -2001,7 +2001,7 @@
     "id": 94,
     "title": "G‘oyalar fabrikasi",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 70000,
     "description": "Ijodiy g‘oyalarni biznes g‘oyasiga aylantirish bo‘yicha amaliy metodlar va innovatsion yondashuvlar yig‘indisi. Startap va korxona tuzishda foydali tavsiyalar mavjud.",
     "images": [
@@ -2022,7 +2022,7 @@
     "id": 95,
     "title": "Ichki ovoz",
     "author": "Kamoliddin Ergashev",
-    "category": "Psixologiya",
+    "category": "psychology",
     "price": 54000,
     "description": "O‘z ichki ovozingizni eshiting — hissiyot va fikrlarni uyg‘unlashtirish, stressni kamaytirish va ichki tinchlikka erishish yo‘llari haqida psixologik maslahatlar.",
     "images": [
@@ -2043,7 +2043,7 @@
     "id": 96,
     "title": "Bolalar va sehrli olamlar",
     "author": "Oydin Mirzaev",
-    "category": "Bolalar adabiyoti",
+    "category": "childrens-literature",
     "price": 39000,
     "description": "Sehrli olamlar, sehrli do‘stlar va sehrli sarguzashtlar haqida bolalar uchun mo‘ljallangan sehrli hikoyalar.",
     "images": [
@@ -2065,7 +2065,7 @@
     "id": 97,
     "title": "Quantum sirlar",
     "author": "Sardor Qodirov",
-    "category": "Ilm-fan",
+    "category": "science",
     "price": 75000,
     "description": "Quantum nazariyasi, entanglement, superpozitsiya va eksperimental fizika haqida ilmiy-populyar tushuntirishlar va izlanishlar jamlanmasi.",
     "images": [
@@ -2086,7 +2086,7 @@
     "id": 98,
     "title": "Iymon va sabr yo‘li",
     "author": "Madina Rasulova",
-    "category": "Diniy",
+    "category": "religion",
     "price": 43000,
     "description": "Iymon, sabr va ma’naviy barqarorlik yo‘lida ilhom beruvchi diniy hikoyalar va tajribalar. O‘quvchi ruhiy o‘sishga ilhom topadi.",
     "images": [
@@ -2107,7 +2107,7 @@
     "id": 99,
     "title": "Ruhiy mushohada",
     "author": "Munira Saidova",
-    "category": "Adabiy-badiiy",
+    "category": "fiction-literature",
     "price": 49000,
     "description": "Ichki dunyo, ruhiy mushohada va inson qalbi haqida lirikalik she’rlar va esse. Har bir bobda o‘quvchi o‘zini va dunyoni anglashga chorlanadi.",
     "images": [
@@ -2128,7 +2128,7 @@
     "id": 100,
     "title": "Ijod va kashfiyotlar",
     "author": "Kamola Abdullayeva",
-    "category": "Biznes va tadbirkorlik",
+    "category": "business-entrepreneurship",
     "price": 71000,
     "description": "Ijod va tashabbuskorlik, g‘oya va kashfiyotlar haqida strategik va amaliy yondashuv. O‘quvchiga o‘z orzularini rejalashtirish va amalga oshirish uchun zarur ko‘nikmalarni beradi.",
     "images": [

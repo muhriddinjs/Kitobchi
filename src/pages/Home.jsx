@@ -9,42 +9,42 @@ import FeaturedBooks from "../components/FeaturedBooks";
 export default function Home() {
   return (
     <>
-      <section class="bg-gradient-to-b from-[#F2F7FF] to-white py-10">
-        <div class="max-w-[1250px] container mx-auto px-6 md:flex md:items-center md:justify-between">
-          <div class="max-w-xl">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+      <section className="bg-gradient-to-b from-[#F2F7FF] to-white py-10">
+        <div className="max-w-[1250px] container mx-auto px-6 md:flex md:items-center md:justify-between">
+          <div className="max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               Kitoblaringizni sotish, sotib olish va almashishning eng oson
               yo‘li
             </h1>
 
-            <p class="mt-5 text-lg text-gray-600">
+            <p className="mt-5 text-lg text-gray-600">
               Ortiqcha kitoblaringizni qo‘ying, kerakli kitoblarni toping va
               o‘quvchilar bilan to‘g‘ridan-to‘g‘ri savdo qiling. Hammasi bitta
               platformada.
             </p>
 
-            <div class="mt-8 flex gap-4">
+            <div className="mt-8 flex gap-4">
               <a
                 href="/announcement"
-                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md transition"
+                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md transition"
               >
                 E’lon joylash
               </a>
 
               <a
                 href="/books"
-                class="px-6 py-3 bg-white text-gray-700 border border-gray-300 rounded-xl hover:bg-gray-100 transition"
+                className="px-6 py-3 bg-white text-gray-700 border border-gray-300 rounded-xl hover:bg-gray-100 transition"
               >
                 Kitoblarni ko‘rish
               </a>
             </div>
           </div>
 
-          <div class="mt-6 md:mt-0">
+          <div className="mt-6 md:mt-0">
             <img
               src={BooksImage}
               alt="Books Illustration"
-              class="w-80 md:w-128 drop-shadow-xl opacity-90"
+              className="w-80 md:w-128 drop-shadow-xl opacity-90"
             />
           </div>
         </div>

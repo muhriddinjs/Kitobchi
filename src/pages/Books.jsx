@@ -187,7 +187,7 @@ function Books() {
         {error && <h2>{error}</h2>} */}
 
         {/* BETTER GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10 py-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-8 lg:gap-10 py-4">
           {books && books.map((book) => <BookCard key={book.id} item={book} />)}
         </div>
       </div>
