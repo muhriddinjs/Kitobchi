@@ -165,7 +165,7 @@ function Navbar() {
               {categories.map((cat) => (
                 <Link
                   key={cat.name}
-                  to={cat.path}
+                  to={`/category/${cat.path}`}
                   onClick={() => setOpen(false)}
                   className="text-gray-600 hover:text-indigo-600"
                 >
