@@ -9,7 +9,7 @@ import FeaturedBooks from "../components/FeaturedBooks";
 export default function Home() {
   return (
     <>
-      <section className="bg-gradient-to-b from-[#F2F7FF] to-white py-10">
+      <section className="bg-gradient-to-b from-[#b3d0f0] to-white py-10 h-[90vh]">
         <div className="max-w-[1250px] container mx-auto px-6 md:flex md:items-center md:justify-between">
           <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -51,10 +51,12 @@ export default function Home() {
       </section>
 
       {/* CONTENT SECTIONS */}
-      <section className="max-w-[1220px] mx-auto px-5 py-16 space-y-16">
-        <FeaturedBooks />
-        <RecentlyUplods />
-        <TopBooks />
+      <section className="mx-auto px-5 py-16 space-y-16 bg-[#F9FAFB]">
+        <div className="max-w-[1220px] mx-auto">
+          <FeaturedBooks />
+          <RecentlyUplods />
+          <TopBooks />
+        </div>
       </section>
     </>
   );

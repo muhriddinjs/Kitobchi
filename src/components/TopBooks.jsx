@@ -119,7 +119,7 @@ const topBooks = [
 
 function TopBooks() {
     return (
-        <section className="py-10 bg-[#F9FAFB]">
+        <section className="py-10">
             <div className="mx-auto max-w-[1300px] px-5 text-center">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-6">
@@ -144,7 +144,7 @@ function TopBooks() {
                     }}
                 >
                     {topBooks.map((item) => (
-                        <BookCard key={item.id} item={item} />
+                        <BookCard key={item.id} book={item} />
                     ))}
                 </Box>
                 <div className="pt-[50px]">

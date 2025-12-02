@@ -118,8 +118,8 @@ const recentBooks = [
 
 function RecentlyUploads() {
   return (
-    <section className="py-10 bg-[#F9FAFB]">
-      <div className="mx-auto max-w-[1300px] px-5 text-center">
+    <section className="py-10">
+      <div className="mx-auto  px-5 text-center">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold text-[#1E1B4B]">
@@ -142,13 +142,13 @@ function RecentlyUploads() {
             },
           }}
         >
-          {recentBooks.map((item) => (
-            <BookCard key={item.id} item={item} />
+          {recentBooks.map((book) => (
+            <BookCard key={book?.id} book={book} />
           ))}
         </Box>
         <div className="pt-[50px]">
           <NavLink to="/books">
-            <Button variant="solid" color="primary">
+            <Button className=" bg-indigo-600 text-white font-semibold py-2 rounded-lg mt-3 hover:bg-indigo-700 transition-colors text-sm hover:cursor-pointer">
               Ko'proq kitoblar buyerda
             </Button>
           </NavLink>

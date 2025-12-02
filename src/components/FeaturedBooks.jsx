@@ -62,7 +62,7 @@ const featuredBooks = [
 
 export default function FeaturedBooks() {
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-2">
             <div className="max-w-[1320px] mx-auto">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">
                     Taklif qilinadigan kitoblar
