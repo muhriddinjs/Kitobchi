@@ -1,39 +1,39 @@
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
-function BookCard({ item }) {
+function BookCard({ book }) {
   return (
     <Link
-      to={`/books/${item.id}`}
+      to={`/books/${book.id}`}
       className="bg-white rounded-[12px] shadow-xs hover:shadow-md transition-all duration-300 p-3 border border-gray-100 group"
     >
       {/* 2 ta rasm – hoverda almashadi */}
       <div className="relative w-full h-50 rounded-lg overflow-hidden">
         <img
-          src={item?.images?.[0]}
-          alt={item.title}
+          src={book?.images?.[0]}
+          alt={book.title}
           className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0"
         />
         <img
-          src={item?.images?.[1]}
-          alt={item.title}
+          src={book?.images?.[1]}
+          alt={book.title}
           className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100"
         />
       </div>
 
       {/* Title */}
       <h3 className="text-lg font-semibold text-gray-900 mt-3 line-clamp-1">
-        {item.title}
+        {book.title}
       </h3>
 
       {/* Location */}
       <div className="flex items-center gap-1 text-indigo-600 text-sm mt-1">
         <MapPin size={17} />
-        <span className="line-clamp-1">{item.location}</span>
+        <span className="line-clamp-1">{book.location}</span>
       </div>
 
       {/* Price */}
-      <p className="text-indigo-700 font-bold mt-1 text-[15px]">{item.price}</p>
+      <p className="text-indigo-700 font-bold mt-1 text-[15px]">{book.price}</p>
 
       {/* Button */}
       <button
