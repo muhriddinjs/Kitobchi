@@ -5,14 +5,17 @@ import { Outlet } from 'react-router'
 
 function RootLayout() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       {/* <BreadCrumbs /> */}
-      <main>
+      
+      {/* Kontent bo‘sh joyni egallaydi */}
+      <main className="flex-1">
         <Outlet />
       </main>
+
       <Footer />
-    </>
+    </div>
   )
 }
 
