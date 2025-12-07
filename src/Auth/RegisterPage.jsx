@@ -45,7 +45,7 @@ function RegisterPage({ onRegister, onClose }) {
       {/* Chap burchakdagi yopish tugmasi */}
       <button
         onClick={() => navigate("/")}
-        className="absolute top-4 left-4 text-gray-700 hover:text-gray-900 font-bold text-5xl z-50"
+        className="absolute top-4 cursor-pointer left-4 text-gray-700 hover:text-gray-900 font-bold text-5xl z-50"
       >
         ←
       </button>
@@ -140,7 +140,7 @@ function RegisterPage({ onRegister, onClose }) {
           Akkauntingiz bormi?{" "}
           <button
             onClick={() => navigate("/login")}
-            className="text-blue-600 font-medium hover:underline"
+            className="text-blue-600 cursor-pointer font-medium hover:underline"
           >
             Kirish
           </button>

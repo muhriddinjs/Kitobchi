@@ -40,7 +40,7 @@ export default function LoginPage({ onLogin, onClose }) {
       {/* Chap burchakdagi yopish tugmasi */}
       <button
         onClick={() => navigate("/")}
-        className="absolute top-4 left-4 text-gray-700 hover:text-gray-900 font-bold text-5xl z-50"
+        className="absolute cursor-pointer top-4 left-4 text-gray-700 hover:text-gray-900 font-bold text-5xl z-50"
       >
         ←
       </button>
@@ -93,7 +93,7 @@ export default function LoginPage({ onLogin, onClose }) {
           Account yo‘qmi?{" "}
           <button
             onClick={() => navigate("/register")}
-            className="text-blue-600 font-medium hover:underline"
+            className="text-blue-600 font-medium cursor-pointer hover:underline"
           >
             Ro‘yxatdan o‘tish
           </button>
