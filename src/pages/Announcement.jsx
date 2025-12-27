@@ -88,19 +88,17 @@ export default function Announcement() {
       return;
     }
 
+    // 🔥 To‘g‘rilangan payload
     const payload = {
       title: formData.title,
       author: formData.author,
       description: "",
-      images: images,                 // string[]
+      images: images,
       category_id: categoryIndex + 1,
       language_id: 1,
-      listing_type: formData.type,    // 🔥 sell | donate (kichik harf)
-      price:
-        formData.type === "sell"
-          ? Number(formData.price)
-          : 1,                         // 🔥 donate bo‘lsa ham > 0
+      listing_type: formData.type,
       location: "Tashkent",
+      ...(formData.type === "sell" && { price: Number(formData.price) }),
     };
 
     try {
@@ -118,7 +116,7 @@ export default function Announcement() {
       setImages([]);
       setImageUrl("");
     } catch (error) {
-      console.error("422 DETAIL:", error.response?.data);
+      console.error("Xatolik:", error.response?.data);
       alert("Xatolik yuz berdi!");
     } finally {
       setLoading(false);

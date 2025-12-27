@@ -1,32 +1,63 @@
 import React, { useEffect, useState } from "react";
 import api from "../api/api";
 import { useNavigate } from "react-router-dom";
+import MyList from "../components/MyList";
+/* ================= MODAL ================= */
+function Modal({ title, onClose, children }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+      <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl p-6 relative animate-fadeIn">
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-gray-400 hover:text-black text-xl"
+        >
+          ✕
+        </button>
+        <h2 className="text-xl font-semibold mb-4 text-gray-800">{title}</h2>
+        {children}
+      </div>
+    </div>
+  );
+}
 
+/* ================= PROFILE ================= */
 function Profile() {
+  const navigate = useNavigate();
+
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const [openProfileModal, setOpenProfileModal] = useState(false);
+  const [openPasswordModal, setOpenPasswordModal] = useState(false);
+
+  /* ---- messages ---- */
+  const [profileMessage, setProfileMessage] = useState("");
+  const [profileError, setProfileError] = useState(false);
+
+  const [passwordMessage, setPasswordMessage] = useState("");
+  const [passwordError, setPasswordError] = useState(false);
+
+  /* ---- forms ---- */
   const [form, setForm] = useState({
     first_name: "",
     last_name: "",
     email: "",
-    password: "",
     phone: "",
     telegram_username: "",
     avatar_url: "",
     bio: "",
-    gender: "",
+  });
+
+  const [passwordForm, setPasswordForm] = useState({
+    old_password: "",
+    new_password: "",
+    confirm_password: "",
   });
 
   const [myListings, setMyListings] = useState([]);
   const [listingsLoading, setListingsLoading] = useState(true);
 
-  const [loading, setLoading] = useState(true);
-  const [editing, setEditing] = useState(false);
-  const [updating, setUpdating] = useState(false);
-  const [message, setMessage] = useState("");
-
-  const navigate = useNavigate();
-
-  // ================== USER INFO ==================
+  /* ================= USER ================= */
   useEffect(() => {
     async function fetchMe() {
       try {
@@ -41,14 +72,12 @@ function Profile() {
           first_name: res.data.first_name || "",
           last_name: res.data.last_name || "",
           email: res.data.email || "",
-          password: "",
           phone: res.data.phone || "",
           telegram_username: res.data.telegram_username || "",
           avatar_url: res.data.avatar_url || "",
           bio: res.data.bio || "",
-          gender: res.data.gender || "",
         });
-      } catch (err) {
+      } catch {
         localStorage.removeItem("token");
         navigate("/login");
       } finally {
@@ -59,39 +88,13 @@ function Profile() {
     fetchMe();
   }, [navigate]);
 
-  // ================== MY LISTINGS ==================
-  useEffect(() => {
-    async function fetchMyListings() {
-      try {
-        const res = await api.get(
-          "/users/me/listings?page=1&page_size=10",
-          {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-          }
-        );
+  /* ================= LISTINGS ================= */
 
-        setMyListings(res.data.items || res.data);
-      } catch (err) {
-        console.log(err);
-      } finally {
-        setListingsLoading(false);
-      }
-    }
-
-    fetchMyListings();
-  }, []);
-
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  }
-
-  async function handleUpdate(e) {
+  /* ================= PROFILE UPDATE ================= */
+  async function handleProfileUpdate(e) {
     e.preventDefault();
-    setUpdating(true);
-    setMessage("");
+    setProfileMessage("");
+    setProfileError(false);
 
     try {
       await api.put("/users/me", form, {
@@ -101,127 +104,255 @@ function Profile() {
       });
 
       setUser({ ...user, ...form });
-      setEditing(false);
-      setMessage("Profil muvaffaqiyatli yangilandi!");
-    } catch (err) {
-      setMessage("Yangilashda xatolik yuz berdi.");
-    } finally {
-      setUpdating(false);
+      setOpenProfileModal(false);
+      setProfileMessage("Profil muvaffaqiyatli yangilandi");
+    } catch {
+      setProfileError(true);
+      setProfileMessage("Profilni yangilashda xatolik yuz berdi");
+    }
+  }
+
+  /* ================= PASSWORD UPDATE ================= */
+  async function handlePasswordChange(e) {
+    e.preventDefault();
+    setPasswordMessage("");
+    setPasswordError(false);
+
+    if (passwordForm.new_password !== passwordForm.confirm_password) {
+      setPasswordError(true);
+      setPasswordMessage("Yangi parollar mos kelmadi");
+      return;
+    }
+
+    try {
+      await api.put(
+        "/users/change-password",
+        {
+          old_password: passwordForm.old_password,
+          new_password: passwordForm.new_password,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
+
+      setOpenPasswordModal(false);
+      setPasswordForm({
+        old_password: "",
+        new_password: "",
+        confirm_password: "",
+      });
+      setPasswordMessage("Parol muvaffaqiyatli almashtirildi");
+    } catch {
+      setPasswordError(true);
+      setPasswordMessage("Parolni almashtirishda xatolik");
     }
   }
 
   if (loading) {
-    return <div className="text-center mt-20">Yuklanmoqda...</div>;
+    return (
+      <div className="text-center mt-20 text-gray-500">Yuklanmoqda...</div>
+    );
   }
 
   return (
-    <div className="mx-auto max-w-[900px] px-5 py-10">
-      {/* ================== PROFILE CARD ================== */}
-      <div className="bg-white shadow-xl rounded-2xl p-6 flex flex-col md:flex-row gap-6">
-        {/* Avatar */}
+    <div className="max-w-[900px] mx-auto px-5 py-10">
+      {/* ================= PROFILE CARD ================= */}
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex gap-6 flex-col md:flex-row">
         <div>
           {form.avatar_url ? (
             <img
               src={form.avatar_url}
-              alt="Avatar"
+              alt="avatar"
               className="w-32 h-32 rounded-full object-cover border"
             />
           ) : (
-            <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center text-xl">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center text-2xl font-bold text-gray-700">
               {user.first_name?.[0] || "U"}
             </div>
           )}
         </div>
 
-        {/* Info */}
-        <div className="flex-1">
-          {!editing ? (
-            <div className="space-y-2">
-              <p><b>Ism:</b> {user.first_name}</p>
-              <p><b>Familiya:</b> {user.last_name}</p>
-              <p><b>Email:</b> {user.email}</p>
-              <p><b>Telefon:</b> {user.phone || "-"}</p>
-              <p><b>Telegram:</b> {user.telegram_username || "-"}</p>
-              {user.bio && <p><b>Bio:</b> {user.bio}</p>}
-            </div>
-          ) : (
-            <form onSubmit={handleUpdate} className="space-y-3">
-              <input name="first_name" value={form.first_name} onChange={handleChange} className="border p-2 w-full" placeholder="Ism" />
-              <input name="last_name" value={form.last_name} onChange={handleChange} className="border p-2 w-full" placeholder="Familiya" />
-              <input name="email" value={form.email} onChange={handleChange} className="border p-2 w-full" placeholder="Email" />
-              <input name="password" value={form.password} onChange={handleChange} className="border p-2 w-full" placeholder="Yangi parol" />
-              <textarea name="bio" value={form.bio} onChange={handleChange} className="border p-2 w-full" placeholder="Bio" />
-
-              {message && <p className="text-green-600">{message}</p>}
-
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                Saqlash
-              </button>
-            </form>
+        <div className="flex-1 space-y-1 text-gray-700">
+          <p>
+            <b>Ism:</b> {user.first_name}
+          </p>
+          <p>
+            <b>Familiya:</b> {user.last_name}
+          </p>
+          <p>
+            <b>Email:</b> {user.email}
+          </p>
+          <p>
+            <b>Telefon:</b> {user.phone || "-"}
+          </p>
+          <p>
+            <b>Telegram:</b> @{user.telegram_username || "-"}
+          </p>
+          {user.bio && (
+            <p>
+              <b>Bio:</b> {user.bio}
+            </p>
           )}
 
-          {!editing && (
-            <button
-              onClick={() => setEditing(true)}
-              className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
+          {profileMessage && (
+            <p
+              className={`mt-3 text-sm ${
+                profileError ? "text-red-600" : "text-green-600"
+              }`}
             >
-              Yangilash
-            </button>
+              {profileMessage}
+            </p>
           )}
 
-          <button
-            onClick={() => {
-              localStorage.removeItem("token");
-              navigate("/login");
-            }}
-            className="ml-3 bg-red-500 text-white px-4 py-2 rounded"
-          >
-            Chiqish
-          </button>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <button
+              onClick={() => {
+                setProfileMessage("");
+                setOpenProfileModal(true);
+              }}
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg"
+            >
+              Profilni tahrirlash
+            </button>
+
+            <button
+              onClick={() => {
+                setPasswordMessage("");
+                setOpenPasswordModal(true);
+              }}
+              className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg"
+            >
+              Parolni almashtirish
+            </button>
+
+            <button
+              onClick={() => {
+                localStorage.removeItem("token");
+                navigate("/login");
+              }}
+              className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
+            >
+              Chiqish
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* ================== MY BOOKS ================== */}
-      <div className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">📚 Mening kitoblarim</h2>
+      {/* ================= PROFILE MODAL ================= */}
+      {openProfileModal && (
+        <Modal
+          title="Profilni tahrirlash"
+          onClose={() => setOpenProfileModal(false)}
+        >
+          <form onSubmit={handleProfileUpdate} className="space-y-3">
+            <input
+              className="border rounded p-2 w-full"
+              name="first_name"
+              value={form.first_name}
+              onChange={handleChange}
+              placeholder="Ism"
+            />
+            <input
+              className="border rounded p-2 w-full"
+              name="last_name"
+              value={form.last_name}
+              onChange={handleChange}
+              placeholder="Familiya"
+            />
+            <input
+              className="border rounded p-2 w-full"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="Telefon"
+            />
+            <input
+              className="border rounded p-2 w-full"
+              name="telegram_username"
+              value={form.telegram_username}
+              onChange={handleChange}
+              placeholder="Telegram username"
+            />
+            <textarea
+              className="border rounded p-2 w-full"
+              name="bio"
+              value={form.bio}
+              onChange={handleChange}
+              placeholder="Bio"
+            />
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg">
+              Saqlash
+            </button>
+          </form>
+        </Modal>
+      )}
 
-        {listingsLoading ? (
-          <p>Yuklanmoqda...</p>
-        ) : myListings.length === 0 ? (
-          <p className="text-gray-500">Siz hali kitob joylamagansiz.</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {myListings.map((book) => (
-              <div
-                key={book.id}
-                className="border rounded-xl p-4 hover:shadow-md transition"
+      {/* ================= PASSWORD MODAL ================= */}
+      {openPasswordModal && (
+        <Modal
+          title="Parolni almashtirish"
+          onClose={() => setOpenPasswordModal(false)}
+        >
+          <form onSubmit={handlePasswordChange} className="space-y-3">
+            <input
+              type="password"
+              className="border rounded p-2 w-full"
+              placeholder="Eski parol"
+              value={passwordForm.old_password}
+              onChange={(e) =>
+                setPasswordForm({
+                  ...passwordForm,
+                  old_password: e.target.value,
+                })
+              }
+            />
+            <input
+              type="password"
+              className="border rounded p-2 w-full"
+              placeholder="Yangi parol"
+              value={passwordForm.new_password}
+              onChange={(e) =>
+                setPasswordForm({
+                  ...passwordForm,
+                  new_password: e.target.value,
+                })
+              }
+            />
+            <input
+              type="password"
+              className="border rounded p-2 w-full"
+              placeholder="Yangi parolni qayta kiriting"
+              value={passwordForm.confirm_password}
+              onChange={(e) =>
+                setPasswordForm({
+                  ...passwordForm,
+                  confirm_password: e.target.value,
+                })
+              }
+            />
+
+            {passwordMessage && (
+              <p
+                className={`text-sm ${
+                  passwordError ? "text-red-600" : "text-green-600"
+                }`}
               >
-                {book.images?.[0] && (
-                  <img
-                    src={book.images[0]}
-                    alt={book.title}
-                    className="h-40 w-full object-cover rounded mb-3"
-                  />
-                )}
+                {passwordMessage}
+              </p>
+            )}
 
-                <h3 className="font-semibold">{book.title}</h3>
-                <p className="text-sm text-gray-600 line-clamp-2">
-                  {book.description}
-                </p>
+            <button className="w-full bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-lg">
+              Parolni saqlash
+            </button>
+          </form>
+        </Modal>
+      )}
 
-                <div className="flex justify-between mt-2">
-                  <span className="font-bold text-blue-600">
-                    {book.price} so‘m
-                  </span>
-                  <span className="text-xs bg-gray-200 px-2 py-1 rounded">
-                    {book.status}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+      {/* ================= MY LISTINGS ================= */}
+      <MyList />
     </div>
   );
 }
